@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      form{
+        display: flex;
+      }
+      div{
+        margin-bottom: 10px;
+      }
+      label {
+        display: flex ;
+        width: 150px;
+        text-align: right;
+      }
+      
+      button{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+      }
+      form{
+        justify-content: center;
+        display: flex;
+        margin: 40px 50px;
+        padding: 30px;
+      }
+
+      legend {
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <form action="/action_page.php" class="was-validated">
+        <fieldset> 
+          <legend>Registro de Producto</legend>
+          <div class="mb-3 mt-3">
+            <label for="codigo" class="form-label">Codigo:</label>
+            <input type="number" class="form-control" id="codigo" placeholder="Ingresa el Codigo" name="codigo" required></input>
+            <div class="valid-feedback">Valido</div>
+            <div class="invalid-feedback">Por favor llena correctamente los campos</div>
+          </div>
+          <div class="mb-3">
+            <label>Descripcion:</label>
+            <input type="text" class="form-control" id="descripcion" placeholder="Ingresa una descripcion" name="descripcion" required></input>
+            <div class="valid-feedback">Valido</div>
+            <div class="invalid-feedback">Por favor llena correctamente los campos</div>
+          </div>
+          <div class="mb-3">
+            <label>Codigo de Barra:</label>
+            <input type="number" class="form-control" id="codigobarra" placeholder="Ingresa el codigo de barra" name="codigobarra" required></input>
+            <div class="valid-feedback">Valido</div>
+            <div class="invalid-feedback">Por favor llena correctamente los campos</div>
+          </div>
+          <div class="mb-3">
+            <label>Precio Unitario:</label>
+            <input type="number" class="form-control" id="preciouni" placeholder="Ingresa precio unitario" name="preciouni" required></input>
+            <div class="valid-feedback">Valido</div>
+            <div class="invalid-feedback">Por favor llena correctamente los campos</div>
+          </div>
+          <div class="mb-3">
+            <label>Stock:</label>
+            <input type="number" class="form-control" id="stock" placeholder="Ingresa numero de stock" name="stock" required></input>
+            <div class="valid-feedback">Valido</div>
+            <div class="invalid-feedback">Por favor llena correctamente los campos</div>
+          </div>
+          <div class="mb-3">
+            <label>Proveedor:</label>
+            <input type="text" class="form-control" id="proveedor" placeholder="Ingresa el proveedor" name="proveedor" required></input>
+            <div class="valid-feedback">Valido</div>
+            <div class="invalid-feedback">Por favor llena correctamente los campos</div>
+          </div>
+          <div class="form-check mb-3">
+            <label>Estado:</label>
+            <input type="checkbox" id="estado" placeholder="Selecciona Estado" name="estado" required>
+            <div class="valid-feedback">Valido</div>
+            <div class="invalid-feedback">Por favor selecciona correctamente el campo</div>
+          </div>
+          <label for="categories">Categorias</label>
+          <select name="categorias" id="categorias" class="form-select" required>
+            <option value="Categoria 1">Categoria 1</option>
+            <option value="Categoria 2">Categoria 2</option>
+            <option value="Categoria 3">Categoria 3</option>
+            <option value="Categoria 4">Categoria 4</option>
+          </select>
+          <div class="invalid-feedback">
+            Por favor selecciona una categoría.
+        </div>
+          <br>
+          <br>
+          <br>
+            <button type="button" onclick="document.location='/datosguardados.html'" class="btn btn-primary">Guardar</input>
+            <button type="button" onclick="document.location='/index.html'" class="btn btn-primary">Cancelar</input>
+        </fieldset>
+      </form>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tabla</title>
+    <style>
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         }
+         h1{
+          text-align: center;
+         }
+         th{
+            text-align: center;
+         }
+         td{
+            text-align: left;
+         }
+         table {
+          width: 100%;
+          margin-top: 3%;
+         }
+         button{
+          color: white;
+          border: none;
+          border-radius: 3px;
+          padding: 8px;
+          margin: 4px;
+          position: relative;
+         }
+         .btn-trash{
+          background-color: red;
+         }
+         .btn-pencil{
+          background-color: blue;
+         }
+         .btn-plus{
+          background-color: green;
+         }
+         td{
+          text-align: center;
+          margin: 5px;
+         }
+    </style>
+</head>
+<body>
+    <h1>Tabla Actividad #2</h1>
+    <table a href="/producto.html"> 
+        <tr>
+          <td>
+            <button class="btn-plus" onclick="document.location='/producto.html'"></a><i class="fa fa-plus"></i> Nuevo</button>
+          </td>
+          <td>Codigo</td>
+          <td>Descripcion</td>
+          <td>Codigo de Barra</td>
+          <td>Precio Unitario</td>
+          <td>Stock</td>
+          <td>Proveedor</td>
+          <td>Estado</td>
+          <td>Categoria</td>
+        </tr>
+        <tr>
+          <td>
+            <button class="btn-pencil"><i class="fa fa-pencil"></i> Editar</button>
+            <button class="btn-trash"><i class="fa fa-trash"></i> Eliminar</button>
+          </td>
+          <td>1</td>
+          <td>Martillo</td>
+          <td>101253151489</td>
+          <td>2.50</td>
+          <td>10</td>
+          <td>Proveedor 1</td>
+          <td>Si</td>
+          <td>Herramientas</td>
+        </tr>
+        <tr>
+          <td>
+            <button class="btn-pencil"><i class="fa fa-pencil"></i> Editar</button>
+            <button class="btn-trash"><i class="fa fa-trash"></i> Eliminar</button>
+          </td>
+            <td>2</td>
+            <td>Kit de Herramientas</td>
+            <td>258981235849</td>
+            <td>10.50</td>
+            <td>20</td>
+            <td>Proveedor 2</td>
+            <td>Si</td>
+            <td>Herramientas</td>
+          </tr>
+      </table>
+</body>
+</html>
